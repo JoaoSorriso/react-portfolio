@@ -57,6 +57,7 @@ h1{
 
 section{
     margin-top: 8rem;
+    height: 100vh;
 }
 
 section > h2, section > h5{
@@ -74,7 +75,7 @@ section > h2{
 }
 
 a{
-    color: var(color);
+    color: var(--color-primary);
     transition: var(--transition);
 }
 
@@ -121,5 +122,15 @@ img{
     }
 }
     
+/* --------- Media Queries (Medium Devices) ------------*/
+@media screen and (max-width: 600px){
+    .container{
+        width: var(--container-width-sm);
+    }
 
+    section > h2{
+        margin-bottom: 2rem;
+    }
+}
+    
 
